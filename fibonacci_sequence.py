@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 '''
-	⎡f(n-1) f(n)⎤ = ⎡1 1⎤^n
+	⎡f(n+1) f(n)⎤ = ⎡1 1⎤^n
 	⎣f(n) f(n-1)⎦	⎣1 0⎦
 '''
 import numpy
