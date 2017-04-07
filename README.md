@@ -1,6 +1,3 @@
-# algorithm
-Algorithm with python
-
 笔记
 ---------------------
 * 运行时间:
