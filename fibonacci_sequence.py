@@ -5,6 +5,7 @@
 '''
 import numpy
 import math
+import time
 
 start = [[1,1],[1,0]]
 
@@ -24,5 +25,9 @@ def fibonacci_sequence_divide(n):
 	z = numpy.dot(y,y)
 	return numpy.dot(z,fibonacci_sequence_divide(n-2*math.floor(n/2)))
 
-print fibonacci_sequence_divide(10)[0][1]
-print fibonacci_sequence(10)
+t = time.time()
+print fibonacci_sequence_divide(30)[0][1]
+print time.time() - t
+t = time.time()
+print fibonacci_sequence(30)
+print time.time() - t
