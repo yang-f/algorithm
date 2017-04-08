@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 '''
-Θ(nlgn)
+Θ(n^2)
 '''
 import random
 
