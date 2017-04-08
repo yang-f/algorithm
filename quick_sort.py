@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 '''
-Θ(n^2)
+Θ(nlgn)
 '''
 import random
 
-def quick_sort(a,start,end):
+def quick_sort(a, start, end):
 	if start < end:
-		flag 	= a[start]
+		flag 	= a[random.randint(start, end-1)]
 		mid 	= start
-		for i in range(start+1, end):
+		for i in range(start, end):
 			if a[i] < flag:
 				a[mid],a[i] = a[i],a[mid]
 				mid 	+= 1
