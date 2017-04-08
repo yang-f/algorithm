@@ -22,6 +22,9 @@
 	* 代换法 猜答案、解出常数、用数学归纳法 
 	* 递归树法 把式子分解开，画成树的形状，持续展开，逐层求和 
 	* 主定理 T(n)=aT(n/b)+f(n),a>=1,b>1,f(n)渐进趋正 和n^logba比较
+		* f(n) > n^logba: Θ(f(n))
+		* f(n) = n^logba: Θ(n^logba*lgn)
+		* f(n) < n^logba: Θ(n^logba)
 
 * 分治法：
 	* 分divide
