@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-如果是1，直接结束；
 Θ(nlgn)
 '''
 import math
@@ -15,7 +14,6 @@ def merge_sort(a):
 	i,j = 0,0
 	result = []
 	while i < len(left) and j < len(right):
-		print i
 		if left[i] >= right[j]:
 			result.append(right[j])
 			j += 1
