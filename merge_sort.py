@@ -11,6 +11,7 @@ def merge_sort(a):
 
 	left = merge_sort(a[:int(math.ceil(len(a)/2))])
 	right = merge_sort(a[int(math.ceil(len(a)/2)):])
+
 	i,j = 0,0
 	result = []
 	while i < len(left) and j < len(right):
@@ -20,8 +21,10 @@ def merge_sort(a):
 		else:
 			result.append(left[i])
 			i += 1	
+
 	result += left[i:]
 	result += right[j:] 
+	
 	return result
 
 x = []

@@ -28,6 +28,7 @@ def fibonacci_sequence_divide(n):
 t = time.time()
 print fibonacci_sequence_divide(30)[0][1]
 print time.time() - t
+
 t = time.time()
 print fibonacci_sequence(30)
 print time.time() - t

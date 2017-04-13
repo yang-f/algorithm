@@ -3,10 +3,13 @@
 	Θ(n^lg7)
 '''
 import numpy as np
+import time
 
 def strassen(a,b):
+
 	if len(a) == 2:
 		return np.dot(a,b)
+
 	m = len(a)/2
 
 	a11 = a[:m,:m]
@@ -38,6 +41,12 @@ def strassen(a,b):
 	return np.vstack((c1,c2))
 
 
-x = y = np.arange(16).reshape(4, 4)
-print x,y 
+x = y = np.arange(64).reshape(8, 8)
+
+t = time.time()
+print np.dot(x, y)
+print time.time() - t
+
+t = time.time()
 print strassen(x, y)
+print time.time() - t
