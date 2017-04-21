@@ -32,9 +32,7 @@ def heap_sort(lists):
 
     return lists
 
-x = []
-for k in range(100):
-    x.append(random.randint(0,100))
+x = [random.randint(0,100) for i in xrange(100)]
 
 t = time.time()
 print heap_sort(x)

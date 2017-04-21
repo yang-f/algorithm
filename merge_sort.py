@@ -27,8 +27,6 @@ def merge_sort(a):
 	
 	return result
 
-x = []
-for k in range(100):
-	x.append(random.randint(0,100))
+x = [random.randint(0,100) for i in xrange(100)]
 
 print merge_sort(x)

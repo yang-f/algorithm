@@ -22,8 +22,6 @@ def quick_sort(a, start, end):
 	return a
 
 
-x = []
-for k in range(100):
-	x.append(random.randint(0, 100))
+x = [random.randint(0,100) for i in xrange(100)]
 	
 print quick_sort(x, 0, 100)
