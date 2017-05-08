@@ -46,8 +46,10 @@ class BTree:
   
 if __name__ == '__main__':  
       
-    btree = BTree()  
-    for i in [random.randint(0,100) for i in xrange(100)]:  
+    btree = BTree() 
+    x = [random.randint(0,100) for i in xrange(100)] 
+    random.shuffle(x)
+    for i in x:  
         btree.insert(i)  
       
     btree.printBTree() 
