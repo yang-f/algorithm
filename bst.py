@@ -34,11 +34,10 @@ class BTree:
     def printBTreeImpl(self, btnode):  
         if btnode == None:  
             return  
-      
         self.printBTreeImpl(btnode.left)  
         print btnode.data  
-        self.printBTreeImpl(btnode.right)  
-      
+        self.printBTreeImpl(btnode.right) 
+
     def printBTree(self):  
         self.printBTreeImpl(self.root)  
   
