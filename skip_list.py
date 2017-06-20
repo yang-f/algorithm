@@ -9,7 +9,7 @@ def randomLevel():
     k = 1
     while random.randint(1, 100) % 2:
         k += 1
-    k = k if k < MAX_LEVEL else MAX_LEVEL
+    k = min(k, MAX_LEVEL)
     return k
 
 
