@@ -9,7 +9,7 @@ def binary_search(a,start,end,key):
     if a[midle] == key:
         return midle
     elif a[midle] > key:
-            return binary_search(a,start,midle,key)
+        return binary_search(a,start,midle,key)
     else:
         return binary_search(a,midle+1,end,key)
 
